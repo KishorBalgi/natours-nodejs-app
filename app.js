@@ -9,7 +9,8 @@ const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
 const cors = require("cors");
-const compression = require("compression");
+// Trust proxies:
+app.enable("trust proxy");
 // Error handlers:
 const AppError = require("./util/appError");
 const globalErrorHandler = require("./controllers/errorController");
