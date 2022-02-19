@@ -1,0 +1,21 @@
+extends base
+mixin stars(count)
+    -Count=count*1
+    -nCount=5-count*1
+    -while(Count--)
+        svg.reviews__star.reviews__star--active
+            use(xlink:href='/img/icons.svg#icon-star')
+    -while(nCount--)
+        svg.reviews__star.reviews__star--inactive
+            use(xlink:href='/img/icons.svg#icon-star')
+block content 
+    main.main 
+        .reviews
+            each review,i in reviews
+                .reviews__card
+                    .reviews__avatar
+                        img.reviews__avatar-img(src=`/img/tours/${tours[i].imageCover}`, alt=`${tours[i].name}`)
+                        h6.reviews__user=tours[i].name
+                    p.reviews__text=review.review
+                    .reviews__rating
+                        +stars(review.rating)
