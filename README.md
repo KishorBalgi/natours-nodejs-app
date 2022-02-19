@@ -2,6 +2,9 @@
 
 This is a travel booking app built as part of a node.js course.
 
+- Frontend - Pug
+- Backend - Node.js
+
 #### Guest Credentials 
 ```
 email : guest@example.com
