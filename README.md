@@ -2,6 +2,12 @@
 
 This is a travel booking app built as part of a node.js course.
 
+#### Guest Credentials 
+```
+email : guest@example.com
+password : guestpass
+```
+
 ## Home Page - [Link](https://natours-app-kishor-balgi.herokuapp.com/)
 
 ![image](https://user-images.githubusercontent.com/75678927/154811056-41a54767-1dec-4177-9278-b3b05fd6c312.png)
